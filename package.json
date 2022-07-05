@@ -5,6 +5,8 @@
     "dev:watch": "npm run build -- --watch",
     "dev:start": "firebase emulators:start",
     "dev:kill": "npx kill-port 5001,8080,9000,9099",
+    "prettier:check": "./node_modules/.bin/prettier --check ./src",
+    "prettier:write": "./node_modules/.bin/prettier --write ./src",
     "serve": "yarn build && firebase emulators:start --only functions",
     "shell": "yarn build && firebase functions:shell",
     "start": "yarn shell",
@@ -29,6 +31,7 @@
     "@types/express": "^4.17.13",
     "@types/morgan": "^1.9.3",
     "firebase-functions-test": "^0.2.0",
+    "prettier": "^2.7.1",
     "typescript": "^3.8.0"
   },
   "private": true

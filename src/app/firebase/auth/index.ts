@@ -1,4 +1,4 @@
-import firebase from '..';
+import firebase from "..";
 
 export class Auth {
   static async createToken(username: string) {

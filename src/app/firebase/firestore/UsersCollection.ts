@@ -1,11 +1,11 @@
-import { FirestoreCollection } from './FirestoreCollection';
+import { FirestoreCollection } from "./FirestoreCollection";
 
 interface IUser {
   passwordHash: string;
 }
 
 export class UsersCollection extends FirestoreCollection {
-  static collection = 'users';
+  static collection = "users";
 
   static async create(username: string, passwordHash: string) {
     const document = this.makeQuery(username);
